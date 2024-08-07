@@ -1,0 +1,123 @@
+.miner-ext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 93%;
+  width: 100%;
+
+  .miner-ext-rig-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    height: 60%;
+    width: 90%;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+    .miner-ext-rig-rack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 35%;
+      width: 19.2%;
+
+      .miner-ext-rig-rack-container {
+        display: flex;
+        flex-direction: row;
+        background: rgba(42, 46, 52, 0.5);
+        height: 80%;
+        width: 100%;
+
+        .miner-ext-rig-rack-img-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: rgba(42, 46, 52, 0.3);
+          width: 40%;
+
+          .miner-ext-rig-gpu {
+            display: flex;
+            height: 80%;
+            width: 80%;
+          }
+        }
+
+        .miner-ext-rig-rack-text-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 60%;
+          padding: 5%;
+          gap: 5px;
+
+          .miner-ext-rig-text {
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+          }
+
+          .miner-ext-rig-link-text {
+            color: rgb(95, 95, 95);
+          }
+        }
+      }
+
+      .miner-ext-rig-info {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        gap: 5px;
+
+        .miner-ext-rig-info-field {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          color: rgb(255, 255, 255);
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #38a2e5;
+        }
+      }
+    }
+
+    .miner-ext-rig-noracks {
+      position: relative;
+      width: 100%;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+
+  .miner-ext-crypto-balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 50px #38a2e5;
+    border: 1px solid #2d3137;
+    height: 30%;
+    width: 90%;
+
+    .miner-ext-crypto-balance-amount {
+      color: #38a2e5;
+      text-shadow: 0 0 10px #38a2e5;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 500;
+      margin-top: 1%;
+    }
+
+    .miner-ext-crypto-balance-info {
+      font-size: 1rem;
+      color: rgb(95, 95, 95);
+      margin-top: 1%;
+    }
+  }
+}

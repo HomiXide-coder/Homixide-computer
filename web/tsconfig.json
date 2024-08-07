@@ -1,0 +1,73 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "~components/*": [
+        "src/components/*"
+      ],
+      "~hooks/*": [
+        "src/hooks/*"
+      ],
+      "~providers/*": [
+        "src/providers/*"
+      ],
+      "~styles/*": [
+        "src/styles/*"
+      ],
+      "~types/*": [
+        "src/types/*"
+      ],
+      "~utils/*": [
+        "src/utils/*"
+      ],
+      "~views/*": [
+        "src/views/*"
+      ],
+      "~/*": [
+        "src/*"
+      ],
+      "~store/*": [
+        "src/store/*"
+      ],
+      "~Modal/*": [
+        "src/components/Modal/*"
+      ],
+      "~ProgressBar/*": [
+        "src/components/ProgressBar/*"
+      ],
+      "~i18n/*": [
+        "src/i18n/*"
+      ],
+      "~languages/*": [
+        "src/languages/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

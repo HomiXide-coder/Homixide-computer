@@ -1,0 +1,108 @@
+.miner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 93%;
+  width: 100%;
+
+  .miner-crypto-balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 50px #38a2e5;
+    border: 1px solid #2d3137;
+    height: 30%;
+    width: 90%;
+
+    .miner-crypto-balance-amount {
+      color: #38a2e5;
+      text-shadow: 0 0 10px #38a2e5;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 500;
+      margin-top: 1%;
+    }
+
+    .miner-crypto-balance-info {
+      font-size: 1rem;
+      color: rgb(95, 95, 95);
+      margin-top: 1%;
+    }
+  }
+
+  .miner-info-container {
+    display: flex;
+    flex-direction: row;
+    height: 35%;
+    width: 90%;
+    gap: 2%;
+    margin-bottom: 5%;
+
+    .miner-setup-container,
+    .miner-eta-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .miner-setup,
+    .miner-eta,
+    .miner-balance {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 100%;
+      width: 30%;
+      background: rgba(42, 46, 52, 0.5);
+      padding: 2% 0 0 2%;
+
+      .miner-setup-header,
+      .miner-eta-header,
+      .miner-balance-header {
+        color: rgb(255, 255, 255);
+        font-size: 1.3rem;
+        margin-bottom: 1%;
+        text-align: left;
+      }
+
+      .miner-setup-info,
+      .miner-eta-info,
+      .miner-balance-info {
+        color: rgb(95, 95, 95);
+        font-size: 1rem;
+        margin-bottom: 1%;
+        text-align: left;
+      }
+
+      .miner-gpu-speed,
+      .miner-eta-speed {
+        background-color: rgb(56, 162, 229, 0.5);
+        color: #38a2e5;
+        margin-bottom: 3%;
+        padding: 3px;
+      }
+
+      .miner-balance-labels {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 3%;
+
+        .miner-balance-amount {
+          background-color: rgb(56, 162, 229, 0.5);
+          color: #38a2e5;
+          padding: 3px;
+        }
+
+        .miner-balance-withdraw {
+          background: #38a2e5;
+          color: #1c6999;
+          padding: 3px 8px;
+        }
+      }
+    }
+  }
+}

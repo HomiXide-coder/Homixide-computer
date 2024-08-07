@@ -1,0 +1,61 @@
+@import '~styles/colors.scss';
+
+.window-container {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  border-radius: 20px;
+  height: 85vh;
+  width: 80vw;
+
+  .window-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 2%;
+    height: 7%;
+    width: 20%;
+    z-index: 5;
+
+    .window-nav-button {
+      border-radius: 50%;
+      height: 13px;
+      width: 13px;
+    }
+
+    .red {
+      background: $red-lt;
+
+      &:hover {
+        background: $blue-dk;
+      }
+    }
+
+    .yellow {
+      background: $yellow-lt;
+    }
+
+    .green {
+      background: $green-lt;
+    }
+  }
+}
+
+.transform-in,
+.transform-out {
+  display: block;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.transform-in {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.transform-out {
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+}

@@ -1,0 +1,79 @@
+.loading-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 93%;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-sizing: border-box;
+
+  .icon {
+    mask-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 85%
+    );
+  }
+
+  .desc {
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: -40px;
+  }
+
+  .title {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(56, 162, 229);
+    margin-top: -35px;
+    font-style: italic;
+    font-family: "Water Brush", cursive;
+  }
+
+  .loading-bar {
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(67, 128, 167, 0.5) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    height: 40px;
+    gap: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
+
+    .loading-line {
+      position: relative;
+      width: 100%;
+      color: lightgray;
+    }
+
+    span {
+      font-size: 22px;
+    }
+  }
+
+  .loading-text {
+    color: gray;
+    font-size: 18px;
+    animation: blinker 2s linear infinite;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,420 @@
+.hq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  height: 93%;
+  width: 100%;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../assets//media/hq.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 95%, transparent 100%);
+    opacity: 0.1;
+    z-index: -1;
+  }
+
+  .hq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 2%;
+    height: 95%;
+    width: 95%;
+
+    .hq-strain-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 1%;
+      height: 6%;
+      width: 100%;
+
+      .hq-turf,
+      .hq-strain,
+      .hq-strain-button,
+      .back-button {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #38a2e5;
+        text-shadow: 0 0 10px #38a2e5;
+        padding-inline: 8px;
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .hq-actions-container {
+      display: flex;
+      flex-direction: row;
+      gap: 1%;
+      height: 92%;
+      width: 100%;
+
+      .hq-upper-span {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      .hq-main-span {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .hq-lower-span {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      .hq-left-actions-container {
+        display: flex;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        gap: 1.75%;
+        height: 100%;
+        width: 58%;
+
+        .hq-robbery-contracts {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: rgba(56, 162, 229, 0.3);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          height: 31.5%;
+          width: 100%;
+          position: relative;
+          z-index: 1;
+          transition: all 0.3s ease;
+
+          &:not(:has(.disabled-page)):hover {
+            background: rgba(56, 162, 229, 0.5);
+
+            &::before {
+              opacity: 1;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../../../../assets/media/robbery.jpg");
+            background-size: cover;
+            mask-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 1) 30%,
+              transparent 100%
+            );
+            opacity: 0.3;
+            z-index: -1;
+            transition: all 0.3s ease;
+          }
+        }
+
+        .hq-bottom-container {
+          display: flex;
+          flex-direction: column;
+          gap: 3%;
+          height: 68%;
+          width: 100.25%;
+        }
+
+        .hq-weed-hire-container,
+        .hq-strains-turfs-container {
+          display: flex;
+          flex-direction: row;
+          // gap: 3% 2%;
+          gap: 1.5%;
+          height: 48.25%;
+          width: 100%;
+
+          .hq-weed-contacts,
+          .hq-hire-contacts,
+          .hq-strains-list,
+          .hq-turfs-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(56, 162, 229, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            height: 100%;
+            width: 49%;
+            transition: all 0.3s ease;
+
+            &:not(:has(.disabled-page)):hover {
+              background: rgba(56, 162, 229, 0.5);
+            }
+          }
+
+          .hq-weed-contacts {
+            position: relative;
+            z-index: 1;
+
+            &:not(:has(.disabled-page)):hover {
+              &::before {
+                opacity: 1;
+              }
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: url("../../../../assets/media/weedcontacts.jpg");
+              background-size: cover;
+              mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 30%,
+                transparent 100%
+              );
+              opacity: 0.5;
+              z-index: -1;
+              transition: all 0.3s ease;
+            }
+          }
+
+          .hq-hire-contacts {
+            position: relative;
+            z-index: 1;
+
+            &:not(:has(.disabled-page)):hover {
+              &::before {
+                opacity: 1;
+              }
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: url("../../../../assets/media/hire.jpg");
+              background-size: cover;
+              mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 30%,
+                transparent 100%
+              );
+              opacity: 0.5;
+              z-index: -1;
+              transition: all 0.3s ease;
+            }
+          }
+
+          .hq-strains-list {
+            position: relative;
+            z-index: 1;
+
+            &:not(:has(.disabled-page)):hover {
+              &::before {
+                opacity: 1;
+              }
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: url("../../../../assets/media/weed.jpg");
+              background-size: cover;
+              mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 30%,
+                transparent 100%
+              );
+              opacity: 0.5;
+              z-index: -1;
+              transition: all 0.3s ease;
+            }
+          }
+
+          .hq-turfs-list {
+            position: relative;
+            z-index: 1;
+
+            &:not(:has(.disabled-page)):hover {
+              &::before {
+                opacity: 1;
+              }
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: url("../../../../assets/media/turf.jpg");
+              background-size: cover;
+              mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 30%,
+                transparent 100%
+              );
+              opacity: 0.5;
+              z-index: -1;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+
+        .disabled-page {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 2;
+          flex-direction: column;
+          gap: 15px;
+
+          .disabled-icon {
+            width: 56px;
+            height: 56;
+          }
+
+          span {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .hq-right-actions-container {
+        display: flex;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        gap: 2%;
+        height: 100%;
+        width: 41%;
+
+        .hq-members,
+        .hq-announcements {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: rgba(56, 162, 229, 0.3);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          height: 49%;
+          width: 100%;
+
+          transition: all ease 0.5s;
+
+          .disabled-page {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            flex-direction: column;
+            gap: 15px;
+
+            .disabled-icon {
+              width: 100px;
+              height: 100px;
+            }
+
+            span {
+              font-size: 18px;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        .hq-members {
+          position: relative;
+          z-index: 1;
+
+          &:not(:has(.disabled-page)):hover {
+            &::before {
+              opacity: 1;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../../../../assets/media/members.jpg");
+            background-size: cover;
+            mask-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 1) 30%,
+              transparent 100%
+            );
+            opacity: 0.5;
+            z-index: -1;
+            transition: all 0.3s ease;
+          }
+        }
+
+        .hq-announcements {
+          position: relative;
+          z-index: 1;
+
+          &:not(:has(.disabled-page)):hover {
+            &::before {
+              opacity: 1;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../../../../assets/media/announcement.jpg");
+            background-size: cover;
+            mask-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 1) 30%,
+              transparent 100%
+            );
+            opacity: 0.5;
+            z-index: -1;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}

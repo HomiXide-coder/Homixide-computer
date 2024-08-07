@@ -1,0 +1,58 @@
+.tooltipBox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltipText {
+  visibility: hidden;
+  background-color: rgba(22, 22, 22, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.tooltipImage {
+  width: 100%;
+  height: auto;
+}
+
+.tooltipBox:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltipTop .tooltipText {
+  bottom: 100%;
+  margin-bottom: 5px;
+  top: auto;
+}
+// needs adjustment
+.tooltipLeft .tooltipText {
+  right: 100%;
+  margin-right: 5px;
+  left: auto;
+}
+// needs adjustment
+.tooltipRight .tooltipText {
+  left: 100%;
+  margin-left: 5px;
+  right: auto;
+}
+// this is fine
+.tooltipBottom .tooltipText {
+  top: 100%;
+  margin-top: 5px;
+  bottom: auto;
+}

@@ -1,0 +1,105 @@
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #38a2e5;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2%;
+    text-shadow: 0 0 10px #38a2e5;
+    height: 15%;
+    width: 100%;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    height: 100%;
+    width: 82%;
+  
+    .modal-input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+      width: 100%;
+  
+      .modal-id-input {
+        display: flex;
+        background: rgba(41, 41, 41, 0.2);
+        align-items: center;
+        text-align: center;
+        padding-left: 20px;
+        justify-content: space-between;
+        color: white;
+        font-size: 0.8rem;
+        z-index: 5;
+        transition-duration: 0.5s;
+        padding-inline: 20px;
+        height: 60px;
+        width: 100%;
+  
+        .input {
+          display: flex;
+          background: transparent;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 500;
+          z-index: 5;
+          transition-duration: 0.5s;
+          outline: none;
+          border: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 3%;
+  
+    .modal-confirm-button,
+    .modal-close-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 10px 10px;
+      width: 35%;
+    }
+  
+    .modal-confirm-button {
+      background: rgba(56, 162, 229, 0.2);
+  
+      border: 1px solid #38a2e5;
+      color: #38a2e5;
+  
+      &:hover {
+        background: rgba(56, 162, 229, 0.5);
+      }
+    }
+  
+    .modal-close-button {
+      background-color: rgb(131, 84, 84, 0.2);
+      border: 1px solid rgb(131, 84, 84);
+      color: rgba(131, 84, 84, 0.7);
+  
+      &:hover {
+        background: rgba(131, 84, 84, 0.5);
+        color: rgb(131, 84, 84);
+      }
+    }
+  }
+  

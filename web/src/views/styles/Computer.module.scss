@@ -1,0 +1,23 @@
+.computer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  // background: url("../../../assets/media/wallpaper.jpg") no-repeat center center
+  //   fixed;
+  // background-size: cover;
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,97 @@
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #38a2e5;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2%;
+  text-shadow: 0 0 10px #38a2e5;
+  height: 15%;
+  width: 100%;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: left;
+  height: 100%;
+  width: 95%;
+
+  .modal-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30%;
+    width: 100%;
+
+    .crypto-address {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(41, 41, 41, 0.2);
+      color: #38a2e5;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-shadow: 0 0 10px #38a2e5;
+      height: 100%;
+      width: 80%;
+    }
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(41, 41, 41, 0.2);
+      height: 100%;
+      width: 18%;
+
+      .copy-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 3%;
+
+  .modal-close-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    padding: 10px 10px;
+    width: 90%;
+  }
+
+  .modal-close-button {
+    background-color: rgb(131, 84, 84, 0.2);
+    border: 1px solid rgb(131, 84, 84);
+    color: rgba(131, 84, 84, 0.7);
+
+    &:hover {
+      background: rgba(131, 84, 84, 0.5);
+      color: rgb(131, 84, 84);
+    }
+  }
+}

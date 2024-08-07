@@ -1,0 +1,272 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  background: rgba(22, 22, 23, 0.3);
+  backdrop-filter: saturate(180%) blur(10px);
+  height: 30px;
+  width: 100vw;
+  z-index: 5;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3%;
+
+    &-image {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .nav-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+
+    .nav-menu,
+    .nav-utils {
+      display: flex;
+    }
+
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+    }
+
+    .nav-wifi,
+    .nav-settings {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-wifi-icon {
+      height: 20px;
+      width: 20px;
+      color: rgba(255, 255, 255, 0.3);
+      margin-right: 20px;
+    }
+
+    .nav-settings-icon {
+      height: 15px;
+      width: 15px;
+      color: white;
+      margin-right: 20px;
+    }
+
+    .nav-date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+    }
+
+    .nav-utils {
+      margin-right: 15px;
+    }
+  }
+}
+
+.wifi-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(22, 22, 23, 0.3);
+  backdrop-filter: saturate(180%) blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: 3.5%;
+  right: 7%;
+  height: 15%;
+  width: 10%;
+  z-index: 100;
+
+  .wifi-info {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1%;
+  background: rgba(22, 22, 23, 0.3);
+  backdrop-filter: saturate(180%) blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 1%;
+  position: absolute;
+  top: 3.5%;
+  right: 5%;
+  height: 35%;
+  width: 15%;
+  z-index: 100;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .change-password {
+    &.active {
+      height: 40%;
+    }
+  }
+
+  .change-wallpaper {
+    &.active {
+      height: 18%;
+    }
+  }
+
+  .change-avatar {
+    &.active {
+      height: 18%;
+    }
+  }
+
+  .change-password,
+  .change-wallpaper,
+  .change-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(100, 93, 93, 0.1);
+    border-radius: 20px;
+    gap: 1%;
+    height: 5%;
+    width: 90%;
+    padding: 5% 0;
+    transition: transform 0.8s ease, height 0.5s ease;
+
+    // &.active {
+    //   height: 40%;
+    // }
+
+    .change-password-title,
+    .change-wallpaper-title,
+    .change-avatar-title {
+      display: flex;
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      font-size: 1rem;
+      padding-bottom: 3%;
+    }
+
+    .password-drawer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1%;
+      height: 100%;
+      width: 100%;
+      transform: translateY(-10%);
+      transition: transform 0.5s ease, opacity 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+
+      &.active {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .wallpaper-url,
+      .avatar-url {
+        display: flex;
+        flex-direction: row;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        align-items: center;
+        padding-inline: 1%;
+        height: 100%;
+        width: 90%;
+
+        .wallpaper-url-input,
+        .avatar-url-input {
+          display: flex;
+          position: relative;
+          width: 95%;
+          text-align: center;
+          background: transparent;
+          color: white;
+          font-size: 0.8rem;
+          font-weight: 600;
+          outline: none;
+          border: none;
+          resize: none;
+          text-align: left;
+          white-space: pre-wrap;
+          width: 95%;
+        }
+
+        .login-icon {
+          color: rgb(146, 146, 146);
+          height: 20px;
+          width: 20px;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+      .user-password-container,
+      .user-confirm-password-container {
+        display: flex;
+        flex-direction: row;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        align-items: center;
+        padding-inline: 1%;
+        height: 33.3%;
+        width: 90%;
+
+        .user-password {
+          display: flex;
+          position: relative;
+          width: 95%;
+          text-align: center;
+          background: transparent;
+          color: white;
+          font-size: 0.8rem;
+          font-weight: 600;
+          outline: none;
+          border: none;
+          resize: none;
+          text-align: left;
+          white-space: pre-wrap;
+          width: 95%;
+        }
+
+        .login-icon {
+          color: rgb(146, 146, 146);
+          height: 20px;
+          width: 20px;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

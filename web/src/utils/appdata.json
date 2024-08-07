@@ -1,0 +1,66 @@
+{
+  "binunce": {
+    "appid": 1,
+    "appname": "Binunce",
+    "appiconid": "binunce",
+    "description": "Crypto transactions, exchange and more",
+    "price": 0.0
+  },
+  "crack": {
+    "appid": 2,
+    "appname": "Smoke Crack",
+    "appiconid": "crack",
+    "description": "Ipconfig simplified",
+    "price": 1.0
+  },
+  "drone": {
+    "appid": 3,
+    "appname": "Drone",
+    "appiconid": "drone",
+    "description": "Fly a drone",
+    "price": 0.0,
+    "disabled": true
+  },
+  "hq": {
+    "appid": 4,
+    "appname": "HQ",
+    "appiconid": "hq",
+    "description": "Manage the HQ and unlock new features",
+    "price": 0.0
+  },
+  "miner": {
+    "appid": 5,
+    "appname": "Miner",
+    "appiconid": "miner",
+    "description": "Mine cryptocurrency. Upgrade GPU on the rack to mine faster",
+    "price": 0.0
+  },
+  "minerext": {
+    "appid": 6,
+    "appname": "MinerEXT",
+    "appiconid": "minerext",
+    "description": "Monitor and control your mining rig",
+    "price": 0.0
+  },
+  "notes": {
+    "appid": 7,
+    "appname": "Notes",
+    "appiconid": "notes",
+    "description": "All your thoughts and ideas in one place",
+    "price": 0.0
+  },
+  "salty": {
+    "appid": 8,
+    "appname": "Salty",
+    "appiconid": "salty",
+    "description": "Scan for accessible networks",
+    "price": 3.0
+  },
+  "wally": {
+    "appid": 9,
+    "appname": "Wally",
+    "appiconid": "wally",
+    "description": "Your crypto wallet",
+    "price": 0.0
+  }
+}

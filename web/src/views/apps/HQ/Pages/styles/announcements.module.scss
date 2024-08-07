@@ -1,0 +1,196 @@
+.announcements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 4%;
+  height: 95%;
+  width: 95%;
+
+  .announcements-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1%;
+    height: 6%;
+    width: 100%;
+
+    .nav-name {
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+      align-items: center;
+      justify-content: center;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      text-align: left;
+      height: 100%;
+      width: 12%;
+
+      .app-name {
+        font-size: 1.2rem;
+      }
+
+      .announcement-icon {
+        color: rgba(255, 255, 255, 0.3);
+        height: 35px;
+        width: 35px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .back-button,
+    .create-button {
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #38a2e5;
+      text-shadow: 0 0 10px #38a2e5;
+      padding-inline: 8px;
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.announcements-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  height: 90%;
+  width: 100%;
+
+  .announcements-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1%;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .announcement {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      height: 8%;
+      min-height: 50px;
+      width: 100%;
+
+      .announcement-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(56, 162, 229, 0.3);
+        gap: 5%;
+        height: 100%;
+        padding-inline: 2%;
+        width: 20%;
+
+        .announcer-and-status {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+
+          .announcer {
+            display: flex;
+            color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+          }
+
+          .status {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(56, 162, 229, 0.3);
+            color: rgb(56, 162, 229);
+            font-size: 1rem;
+            padding: 3px;
+            text-shadow: 0 0 10px rgb(56, 162, 229);
+          }
+        }
+
+        .announcement-date {
+          display: flex;
+          background: rgba(255, 255, 255, 0.3);
+          color: rgb(255, 255, 255);
+          font-size: 1rem;
+          padding: 3px;
+        }
+      }
+    }
+
+    .announcement-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(56, 162, 229, 0.5);
+      color: rgb(255, 255, 255);
+      padding-inline: 2%;
+      height: 100%;
+      width: 80%;
+    }
+
+    .announcement-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .read-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(56, 162, 229, 0.3);
+      color: rgb(56, 162, 229);
+      font-size: 1rem;
+      text-shadow: 0 0 10px rgb(56, 162, 229);
+      padding: 8px;
+      height: 100%;
+      width: auto;
+
+      &:hover {
+        background: rgba(56, 162, 229, 0.5);
+      }
+    }
+
+    .delete-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 0, 0, 0.3);
+      color: rgb(255, 0, 0);
+      font-size: 1rem;
+      text-shadow: 0 0 10px rgb(255, 0, 0);
+      padding: 8px;
+      height: 100%;
+      width: auto;
+
+      &:hover {
+        background: rgba(255, 0, 0, 0.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.turfs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 4%;
+  height: 95%;
+  width: 95%;
+
+  .turfs-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1%;
+    height: 6%;
+    width: 100%;
+
+    .back-button {
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #38a2e5;
+      text-shadow: 0 0 10px #38a2e5;
+      padding-inline: 8px;
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.turfs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+
+  .turfs-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    gap: 1%;
+    row-gap: 5%;
+
+    .turf {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background: rgba(56, 162, 229, 0.3);
+      border-radius: 4px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      outline: 5px solid rgba(56, 162, 229, 0.3);
+      flex-basis: 14%;
+      height: 30%;
+      margin-right: 1%;
+
+      .turf:nth-child(7n) {
+        margin-right: 0;
+      }
+
+      .turf-progress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 100%;
+
+        .turf-icon {
+          color: rgb(255, 255, 255);
+          height: 40px;
+          width: 40px;
+        }
+      }
+
+      .turf-span {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .turf-name {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+      }
+    }
+  }
+}
